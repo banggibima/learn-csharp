@@ -58,6 +58,38 @@ namespace learn_csharp
         }
     }
 
+     class Music
+    {
+        public string title;
+        public string artist;
+
+        public Music(string title, string artist, string genre)
+        {
+            this.title = title;
+            this.artist = artist;
+            this.setGenre(genre);
+        }
+
+        public void setGenre(string genre)
+        {
+            if (genre == "Pop" || genre == "Jazz" || genre == "Blues" || genre == "Metal" || genre == "Rock")
+            {
+                this.genre = genre;
+            }
+            else
+            {
+                this.genre = "No Genre";
+            }
+        }
+
+        public string setGenre()
+        {
+            return genre;
+        }
+
+        private string genre;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -295,6 +327,13 @@ namespace learn_csharp
 
             Console.WriteLine(student1.hasHonors());
             Console.WriteLine(student2.hasHonors());
+
+            // getters setters
+            Music sundaybest = new Music("Sunday Best", "Surfaces", "Soul");
+
+            Console.WriteLine(sundaybest.title);
+            Console.WriteLine(sundaybest.artist);
+            Console.WriteLine(sundaybest.setGenre());
         }
 
         static void call()
