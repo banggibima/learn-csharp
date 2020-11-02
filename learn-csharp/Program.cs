@@ -90,6 +90,36 @@ namespace learn_csharp
         private string genre;
     }
 
+    class Chef
+    {
+        public void makeChicken()
+        {
+            Console.WriteLine("The chef makes yummy chicken");
+        }
+
+        public void makeSalad()
+        {
+            Console.WriteLine("The chef makes salad");
+        }
+
+        public void makeSpecialDish()
+        {
+            Console.WriteLine("The chef makes bbq ribs");
+        }
+    }
+
+    class ItalianChef : Chef
+    {
+        public void makePasta()
+        {
+            Console.WriteLine("The chef makes pasta");
+        }
+        public void makeSpecialDish()
+        {
+            Console.WriteLine("The chef makes chicken parm");
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -334,6 +364,14 @@ namespace learn_csharp
             Console.WriteLine(sundaybest.title);
             Console.WriteLine(sundaybest.artist);
             Console.WriteLine(sundaybest.setGenre());
+
+             // inheritance
+            Chef chef = new Chef();
+            chef.makeChicken();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.makePasta();
+            italianChef.makeSpecialDish();
         }
 
         static void call()
