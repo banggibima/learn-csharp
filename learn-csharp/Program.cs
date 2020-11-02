@@ -129,6 +129,24 @@ namespace learn_csharp
             Console.WriteLine(grids[0][0] + " " + grids[0][1] + " " + grids[0][2]);
             Console.WriteLine(grids[1][0] + " " + grids[1][1] + " " + grids[1][2]);
             Console.WriteLine(grids[2][0] + " " + grids[2][1] + " " + grids[2][2]);
+            
+            // functions
+            call();
+
+            sayHello("Mike", 24);
+            sayHello("Albert", 23);
+            sayHello("Banning", 22);
         }
+
+        static void call()
+        {
+            Console.WriteLine("You call this function");
+        }
+
+        static void sayHello(string name, int age)
+        {
+            Console.WriteLine($"Hello {name}, you was {age}");
+        }
+
     }
 }
