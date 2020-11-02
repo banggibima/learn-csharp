@@ -36,6 +36,21 @@ namespace learn_csharp
             
             Console.WriteLine($"He really like the name {character_name}");
             Console.WriteLine($"But didn't like being {character_age}");
+
+            // data types
+            char abjad = 'A';            // char
+            string saying = "good luck"; // string
+            int score = 95;              // integer
+            double price = 8.99;         // double
+            bool blood_donor = true;     // boolean
+            bool late_to_work = false;   // boolean
+
+            Console.WriteLine(abjad);
+            Console.WriteLine(saying);
+            Console.WriteLine(score);
+            Console.WriteLine(price);
+            Console.WriteLine(blood_donor);
+            Console.WriteLine(late_to_work);
         }
     }
 }
