@@ -10,6 +10,12 @@ namespace learn_csharp
     {
         static void Main(string[] args)
         {
+            // output
+            Console.WriteLine("Hello World");
+            Console.Write("Good");
+            Console.Write("Morning");
+            Console.Write("!");
+            Console.WriteLine();
         }
     }
 }
