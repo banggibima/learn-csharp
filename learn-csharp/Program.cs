@@ -136,6 +136,13 @@ namespace learn_csharp
             sayHello("Mike", 24);
             sayHello("Albert", 23);
             sayHello("Banning", 22);
+
+            // returns
+            volumeCube(4.0);
+
+            Console.WriteLine(volumeCube(6.0));
+            double answer = volumeParallelepiped(2.0, 3.0, 5.0);
+            Console.WriteLine($"Volume of Parallelepiped is {answer}");
         }
 
         static void call()
@@ -147,6 +154,19 @@ namespace learn_csharp
         {
             Console.WriteLine($"Hello {name}, you was {age}");
         }
+        
+        static double volumeCube(double side)
+        {
+            double result = side * side * side;
 
+            return result;
+        }
+
+        static double volumeParallelepiped(double length, double width, double height)
+        {
+            double result = length * width * height;
+
+            return result;
+        }
     }
 }
