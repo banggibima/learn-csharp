@@ -24,6 +24,18 @@ namespace learn_csharp
             Console.WriteLine("1 2 3 4    ");
             Console.WriteLine("1 2 3 4 5  ");
             Console.WriteLine("1 2 3 4 5 6");
+
+            // variables
+            string character_name = "Banggi";
+            int character_age = 17;
+
+            Console.WriteLine($"There once was a man named {character_name}");
+            Console.WriteLine($"He was {character_age} years old");
+            
+            character_age = 19;
+            
+            Console.WriteLine($"He really like the name {character_name}");
+            Console.WriteLine($"But didn't like being {character_age}");
         }
     }
 }
