@@ -143,6 +143,34 @@ namespace learn_csharp
             Console.WriteLine(volumeCube(6.0));
             double answer = volumeParallelepiped(2.0, 3.0, 5.0);
             Console.WriteLine($"Volume of Parallelepiped is {answer}");
+
+            // logical operators
+            /*
+                && requires both to be true (and)
+                || requires either to be true (or)
+                ! negates the result (not)
+            */
+
+            // conditionals
+            int coffee = 1;
+            int donut = 2;
+            bool tired;
+            tired = true;
+
+            if (coffee > 0 && donut > 1)
+            {
+                Console.WriteLine("My coffee greater than 0 and my donut greater than 1");
+            }
+
+            if (coffee > 0 || donut > 1)
+            {
+                Console.WriteLine("My coffee greater than 0 or my donut greater than 1");
+            }
+
+            if (!tired)
+            {
+                Console.WriteLine("I am not tired");
+            }
         }
 
         static void call()
@@ -154,7 +182,7 @@ namespace learn_csharp
         {
             Console.WriteLine($"Hello {name}, you was {age}");
         }
-        
+
         static double volumeCube(double side)
         {
             double result = side * side * side;
