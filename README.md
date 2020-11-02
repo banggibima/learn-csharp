@@ -12,7 +12,6 @@
 - [x] If Statement
 - [x] Switch Statement
 - [x] Conditionals
-- [x] Vectors
 - [x] While Loop
 - [x] Do While Loop
 - [x] For Loop
