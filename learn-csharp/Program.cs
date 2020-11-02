@@ -102,6 +102,14 @@ namespace learn_csharp
 
             Console.WriteLine(Math.Pow(4, 2)); // power
             Console.WriteLine(Math.Sqrt(144)); // square root
+
+            // user input
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Hello {name}, you was {age}");
         }
     }
 }
