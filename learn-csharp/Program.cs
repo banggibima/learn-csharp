@@ -59,6 +59,49 @@ namespace learn_csharp
             Console.WriteLine($"The length of text is {string_text.Length} bytes.");
             Console.WriteLine(string_text.Substring(7, 4));
             Console.WriteLine(string_text.Substring(7));
+
+            // arithmetic operators
+            /*
+                + addition
+                - subtraction
+                * multiplication
+                / division
+                % modulo (yields the remainder)
+            */
+
+            // maths
+            int first = 16;
+            int second = 4;
+            int result;
+
+            result = first + second;
+            Console.WriteLine(result);
+            result = first - second;
+            Console.WriteLine(result);
+            result = first * second;
+            Console.WriteLine(result);
+            result = first / second;
+            Console.WriteLine(result);
+            result = first % second;
+            Console.WriteLine(result);
+
+            int numbers = 10;
+
+            numbers += 100;
+            Console.WriteLine(numbers);
+            numbers -= 100;
+            Console.WriteLine(numbers);
+            numbers *= 100;
+            Console.WriteLine(numbers);
+            numbers /= 100;
+            Console.WriteLine(numbers);
+            numbers++; // increment
+            Console.WriteLine(numbers);
+            numbers--; // decrament
+            Console.WriteLine(numbers);
+
+            Console.WriteLine(Math.Pow(4, 2)); // power
+            Console.WriteLine(Math.Sqrt(144)); // square root
         }
     }
 }
