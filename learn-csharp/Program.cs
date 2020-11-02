@@ -33,6 +33,31 @@ namespace learn_csharp
         }
     }
 
+    class Student
+    {
+        public string name;
+        public int age;
+        public string major;
+        public double gpa;
+
+        public Student(string aname, int aage, string amajor, double agpa)
+        {
+            this.name = aname;
+            this.age = aage;
+            this.major = amajor;
+            this.gpa = agpa;
+        }
+
+        public bool hasHonors()
+        {
+            if (gpa >= 3.5)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -263,6 +288,13 @@ namespace learn_csharp
             Console.WriteLine(movie3.title);
             Console.WriteLine(movie3.director);
             Console.WriteLine(movie3.years);
+
+            // object functions
+            Student student1 = new Student("Jimmy", 21, "Business", 3.4);
+            Student student2 = new Student("Packie", 20, "Art", 3.8);
+
+            Console.WriteLine(student1.hasHonors());
+            Console.WriteLine(student2.hasHonors());
         }
 
         static void call()
