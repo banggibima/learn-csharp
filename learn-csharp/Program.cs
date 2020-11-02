@@ -51,6 +51,14 @@ namespace learn_csharp
             Console.WriteLine(price);
             Console.WriteLine(blood_donor);
             Console.WriteLine(late_to_work);
+
+            // strings
+            string string_text = "I am a long and elaborate string indeed";
+
+            Console.WriteLine(string_text[0]);
+            Console.WriteLine($"The length of text is {string_text.Length} bytes.");
+            Console.WriteLine(string_text.Substring(7, 4));
+            Console.WriteLine(string_text.Substring(7));
         }
     }
 }
