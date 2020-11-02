@@ -5,7 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace learn_csharp
-{
+{   
+    class Book
+    {
+        public string title;
+        public string author;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -172,7 +178,7 @@ namespace learn_csharp
                 Console.WriteLine("I am not tired");
             }
 
-            // while Loop
+            // while loop
             Console.Write("Create your PIN numbers: ");
             int new_pin = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter your PIN numbers: ");
@@ -186,7 +192,7 @@ namespace learn_csharp
             }
             Console.WriteLine("Yes you right");
 
-            // do while Loop
+            // do while loop
             int a = 1;
 
             do
@@ -196,13 +202,28 @@ namespace learn_csharp
             }
             while (a <= 5);
 
-            // for Loop
+            // for loop
             int b;
 
             for (b = 0; b < 10; b++)
             {
                 Console.WriteLine(b);
             }
+
+            // classes objects
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "J. K. Rowling";
+
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book1.author);
+
+            Book book2 = new Book();
+            book2.title = "Lord of the rings";
+            book2.author = "Tolkein";
+
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
         }
 
         static void call()
