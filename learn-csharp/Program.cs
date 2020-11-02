@@ -12,6 +12,27 @@ namespace learn_csharp
         public string author;
     }
 
+    class Movie
+    {
+        public string title;
+        public string director;
+        public int years;
+
+        public Movie()
+        {
+            this.title = "no title";
+            this.director = "no director";
+            this.years = 0;
+        }
+
+        public Movie(string atitle, string adirector, int ayears)
+        {
+            this.title = atitle;
+            this.director = adirector;
+            this.years = ayears;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -224,6 +245,24 @@ namespace learn_csharp
 
             Console.WriteLine(book2.title);
             Console.WriteLine(book2.author);
+
+            // constructor
+            Movie movie1 = new Movie("Parasite", "Bong Joon Ho", 2019);
+            Movie movie2 = new Movie("Contagion", "Steven Soderbergh", 2011);
+
+            Console.WriteLine(movie1.title);
+            Console.WriteLine(movie1.director);
+            Console.WriteLine(movie1.years);
+
+            Console.WriteLine(movie2.title);
+            Console.WriteLine(movie2.director);
+            Console.WriteLine(movie2.years);
+
+            Movie movie3 = new Movie();
+
+            Console.WriteLine(movie3.title);
+            Console.WriteLine(movie3.director);
+            Console.WriteLine(movie3.years);
         }
 
         static void call()
