@@ -171,6 +171,38 @@ namespace learn_csharp
             {
                 Console.WriteLine("I am not tired");
             }
+
+            // while Loop
+            Console.Write("Create your PIN numbers: ");
+            int new_pin = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter your PIN numbers: ");
+            int pin = Convert.ToInt32(Console.ReadLine());
+
+            while (pin != new_pin)
+            {
+                Console.WriteLine("Try again!");
+                Console.Write("Enter your PIN numbers: ");
+                pin = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Yes you right");
+
+            // do while Loop
+            int a = 1;
+
+            do
+            {
+                Console.WriteLine(a);
+                a++;
+            }
+            while (a <= 5);
+
+            // for Loop
+            int b;
+
+            for (b = 0; b < 10; b++)
+            {
+                Console.WriteLine(b);
+            }
         }
 
         static void call()
