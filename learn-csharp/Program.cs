@@ -110,6 +110,25 @@ namespace learn_csharp
             int age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Hello {name}, you was {age}");
+
+            // arrays
+            int[] primes = {2, 3, 5, 7, 11};
+
+            Console.WriteLine(primes[0]);
+            Console.WriteLine(primes[1]);
+            Console.WriteLine(primes[2]);
+            Console.WriteLine(primes[3]);
+            Console.WriteLine(primes[4]);
+
+            int[][] grids = {
+                new int[] {1, 2, 3},
+                new int[] {4, 5, 6},
+                new int[] {7, 8, 9}
+            };
+
+            Console.WriteLine(grids[0][0] + " " + grids[0][1] + " " + grids[0][2]);
+            Console.WriteLine(grids[1][0] + " " + grids[1][1] + " " + grids[1][2]);
+            Console.WriteLine(grids[2][0] + " " + grids[2][1] + " " + grids[2][2]);
         }
     }
 }
