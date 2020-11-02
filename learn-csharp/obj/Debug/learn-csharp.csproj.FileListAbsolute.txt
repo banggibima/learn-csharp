@@ -1,0 +1,7 @@
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\bin\Debug\learn-csharp.exe.config
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\bin\Debug\learn-csharp.exe
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\bin\Debug\learn-csharp.pdb
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\obj\Debug\learn-csharp.csprojAssemblyReference.cache
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\obj\Debug\learn-csharp.csproj.CoreCompileInputs.cache
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\obj\Debug\learn-csharp.exe
+D:\Projects\visual-studio-projects\learn-csharp\learn-csharp\obj\Debug\learn-csharp.pdb
