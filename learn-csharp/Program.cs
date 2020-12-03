@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace learn_csharp
 {
-    // kelas Book
     class Book
     {
-        // konstruktor public
         public string title;
         public string author;
     }
 
-    // kelas Movie
     class Movie
     {
-        // konstruktor public
         public string title;
         public string director;
         public int years;
 
-        // fungsi Movie
         public Movie()
         {
             this.title = "Tidak ada judul";
@@ -30,7 +25,6 @@ namespace learn_csharp
             this.years = 0;
         }
 
-        // fungsi Movie
         public Movie(string aTitle, string aDirector, int aYears)
         {
             this.title = aTitle;
@@ -39,16 +33,13 @@ namespace learn_csharp
         }
     }
     
-    // kelas Student
     class Student
     {
-        // konstruktor public
         public string name;
         public int age;
         public string major;
         public double gpa;
-
-        // fungsi Student
+        
         public Student(string aName, int aAge, string aMajor, double aGpa)
         {
             this.name = aName;
@@ -57,7 +48,6 @@ namespace learn_csharp
             this.gpa = aGpa;
         }
 
-        // fungsi boolean hasHonors
         public bool hasHonors()
         {
             if (gpa >= 3.5)
@@ -67,15 +57,12 @@ namespace learn_csharp
             return false;
         }
     }
-
-    // kelas Music
+    
     class Music
     {
-        // konstruktor public
         public string title;
         public string artist;
 
-        // fungsi Music
         public Music(string title, string artist, string genre)
         {
             this.title = title;
@@ -83,7 +70,6 @@ namespace learn_csharp
             this.setGenre(genre);
         }
 
-        // fungsi void setGenre
         public void setGenre(string genre)
         {
             if (genre == "Pop" || genre == "Jazz" || genre == "Blues" || genre == "Metal" || genre == "Rock")
@@ -96,61 +82,50 @@ namespace learn_csharp
             }
         }
 
-        // fungsi string setGenre
         public string setGenre()
         {
             return genre;
         }
 
-        // konstruktor private
         private string genre;
     }
 
-    // kelas Chef
     class Chef
     {
-        // fungsi void makeNasiGoreng
         public void makeNasiGoreng()
         {
             Console.WriteLine("Chef membuat nasi goreng");
         }
 
-        // fungsi void makeAyamBakar
         public void makeAyamBakar()
         {
             Console.WriteLine("Chef membuat ayam bakar");
         }
 
-        // fungsi void makeMenuSpesial
         public void makeMenuSpesial()
         {
             Console.WriteLine("Chef membuat soto ayam");
         }
     }
     
-    // kelas JavaneseChef dengan extends Chef
     class JavaneseChef : Chef
     {
-        // fungsi void makeRawon
         public void makeRawon()
         {
             Console.WriteLine("Chef membuat rawon");
         }
 
-        // fungsi void makeNasiGoreng
         public void makePecel()
         {
             Console.WriteLine("Chef membuat pecel");
         }
 
-        // fungsi void makeMenuSpesial
         public void makeMenuSpesial()
         {
             Console.WriteLine("Chef membuat rujak cingur");
         }
     }
 
-    // kelas Program berguna untuk menjalakan program console
     class Program
     {
         static void Main(string[] args)
