@@ -434,8 +434,8 @@ namespace learn_csharp
             Console.WriteLine(movie3.years);
 
             // object function
-            Student student1 = new Student("Nindy", 20, "Bisnis", 3.4);
-            Student student2 = new Student("Beni", 23, "Seni", 3.8);
+            Student student1 = new Student("Nindy", 20, "Bisnis", 3.8);
+            Student student2 = new Student("Beni", 23, "Seni", 3.4);
 
             Console.WriteLine(student1.hasHonors());
             Console.WriteLine(student2.hasHonors());
