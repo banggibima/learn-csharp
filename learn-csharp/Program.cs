@@ -5,49 +5,59 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace learn_csharp
-{   
+{
+    // kelas Book
     class Book
     {
+        // konstruktor public
         public string title;
         public string author;
     }
 
+    // kelas Movie
     class Movie
     {
+        // konstruktor public
         public string title;
         public string director;
         public int years;
 
+        // fungsi Movie
         public Movie()
         {
-            this.title = "no title";
-            this.director = "no director";
+            this.title = "Tidak ada judul";
+            this.director = "Tidak ada sutradara";
             this.years = 0;
         }
 
-        public Movie(string atitle, string adirector, int ayears)
+        // fungsi Movie
+        public Movie(string aTitle, string aDirector, int aYears)
         {
-            this.title = atitle;
-            this.director = adirector;
-            this.years = ayears;
+            this.title = aTitle;
+            this.director = aDirector;
+            this.years = aYears;
         }
     }
-
+    
+    // kelas Student
     class Student
     {
+        // konstruktor public
         public string name;
         public int age;
         public string major;
         public double gpa;
 
-        public Student(string aname, int aage, string amajor, double agpa)
+        // fungsi Student
+        public Student(string aName, int aAge, string aMajor, double aGpa)
         {
-            this.name = aname;
-            this.age = aage;
-            this.major = amajor;
-            this.gpa = agpa;
+            this.name = aName;
+            this.age = aAge;
+            this.major = aMajor;
+            this.gpa = aGpa;
         }
 
+        // fungsi boolean hasHonors
         public bool hasHonors()
         {
             if (gpa >= 3.5)
@@ -58,11 +68,14 @@ namespace learn_csharp
         }
     }
 
-     class Music
+    // kelas Music
+    class Music
     {
+        // konstruktor public
         public string title;
         public string artist;
 
+        // fungsi Music
         public Music(string title, string artist, string genre)
         {
             this.title = title;
@@ -70,6 +83,7 @@ namespace learn_csharp
             this.setGenre(genre);
         }
 
+        // fungsi void setGenre
         public void setGenre(string genre)
         {
             if (genre == "Pop" || genre == "Jazz" || genre == "Blues" || genre == "Metal" || genre == "Rock")
@@ -78,56 +92,73 @@ namespace learn_csharp
             }
             else
             {
-                this.genre = "No Genre";
+                this.genre = "Tidak ada genre";
             }
         }
 
+        // fungsi string setGenre
         public string setGenre()
         {
             return genre;
         }
 
+        // konstruktor private
         private string genre;
     }
 
+    // kelas Chef
     class Chef
     {
-        public void makeChicken()
+        // fungsi void makeNasiGoreng
+        public void makeNasiGoreng()
         {
-            Console.WriteLine("The chef makes yummy chicken");
+            Console.WriteLine("Chef membuat nasi goreng");
         }
 
-        public void makeSalad()
+        // fungsi void makeAyamBakar
+        public void makeAyamBakar()
         {
-            Console.WriteLine("The chef makes salad");
+            Console.WriteLine("Chef membuat ayam bakar");
         }
 
-        public void makeSpecialDish()
+        // fungsi void makeMenuSpesial
+        public void makeMenuSpesial()
         {
-            Console.WriteLine("The chef makes bbq ribs");
+            Console.WriteLine("Chef membuat soto ayam");
         }
     }
-
-    class ItalianChef : Chef
+    
+    // kelas JavaneseChef dengan extends Chef
+    class JavaneseChef : Chef
     {
-        public void makePasta()
+        // fungsi void makeRawon
+        public void makeRawon()
         {
-            Console.WriteLine("The chef makes pasta");
+            Console.WriteLine("Chef membuat rawon");
         }
-        public void makeSpecialDish()
+
+        // fungsi void makeNasiGoreng
+        public void makePecel()
         {
-            Console.WriteLine("The chef makes chicken parm");
+            Console.WriteLine("Chef membuat pecel");
+        }
+
+        // fungsi void makeMenuSpesial
+        public void makeMenuSpesial()
+        {
+            Console.WriteLine("Chef membuat rujak cingur");
         }
     }
 
+    // kelas Program berguna untuk menjalakan program console
     class Program
     {
         static void Main(string[] args)
         {
             // output
             Console.WriteLine("Hello World");
-            Console.Write("Good");
-            Console.Write("Morning");
+            Console.Write("Selamat ");
+            Console.Write("Pagi");
             Console.Write("!");
             Console.WriteLine();
 
@@ -140,24 +171,24 @@ namespace learn_csharp
             Console.WriteLine("1 2 3 4 5 6");
 
             // variables
-            string character_name = "Banggi";
+            string character_name = "Budi";
             int character_age = 17;
 
-            Console.WriteLine($"There once was a man named {character_name}");
-            Console.WriteLine($"He was {character_age} years old");
+            Console.WriteLine($"Pernah ada seorang pria bernama {character_name}");
+            Console.WriteLine($"Dia berusia {character_age} tahun");
             
             character_age = 19;
             
-            Console.WriteLine($"He really like the name {character_name}");
-            Console.WriteLine($"But didn't like being {character_age}");
+            Console.WriteLine($"Dia sangat suka namanya {character_name}");
+            Console.WriteLine($"Tapi dia tidak suka ketika berusia {character_age}");
 
             // data types
-            char abjad = 'A';            // char
-            string saying = "good luck"; // string
-            int score = 95;              // integer
-            double price = 8.99;         // double
-            bool blood_donor = true;     // boolean
-            bool late_to_work = false;   // boolean
+            char abjad = 'A';                   // char
+            string saying = "semoga berhasil";  // string
+            int score = 95;                     // integer
+            double price = 8.99;                // double
+            bool blood_donor = true;            // boolean
+            bool late_to_work = false;          // boolean
 
             Console.WriteLine(abjad);
             Console.WriteLine(saying);
@@ -166,24 +197,24 @@ namespace learn_csharp
             Console.WriteLine(blood_donor);
             Console.WriteLine(late_to_work);
 
-            // strings
-            string string_text = "I am a long and elaborate string indeed";
+            // string
+            string string_text = "Ini memang benang yang panjang dan rumit";
 
             Console.WriteLine(string_text[0]);
-            Console.WriteLine($"The length of text is {string_text.Length} bytes.");
+            Console.WriteLine($"Panjang teks ini {string_text.Length} byte.");
             Console.WriteLine(string_text.Substring(7, 4));
             Console.WriteLine(string_text.Substring(7));
 
-            // arithmetic operators
+            // operator aritmatika
             /*
-                + addition
-                - subtraction
-                * multiplication
-                / division
-                % modulo (yields the remainder)
+                + penjumlahan
+                - pengurangan
+                * perkalian
+                / pembagian
+                % modulus
             */
 
-            // maths
+            // mathematics
             int first = 16;
             int second = 4;
             int result;
@@ -214,18 +245,18 @@ namespace learn_csharp
             numbers--; // decrament
             Console.WriteLine(numbers);
 
-            Console.WriteLine(Math.Pow(4, 2)); // power
-            Console.WriteLine(Math.Sqrt(144)); // square root
+            Console.WriteLine(Math.Pow(4, 2)); // pangkat
+            Console.WriteLine(Math.Sqrt(144)); // akar pangkat
 
-            // user input
-            Console.WriteLine("Enter your name: ");
+            // input
+            Console.Write("Masukan namamu: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Enter your age: ");
+            Console.Write("Masukan usiamu: ");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Hello {name}, you was {age}");
+            Console.WriteLine($"Halo {name}, kamu berusia {age} tahun");
 
-            // arrays
+            // single array
             int[] primes = {2, 3, 5, 7, 11};
 
             Console.WriteLine(primes[0]);
@@ -234,6 +265,7 @@ namespace learn_csharp
             Console.WriteLine(primes[3]);
             Console.WriteLine(primes[4]);
 
+            // multi array
             int[][] grids = {
                 new int[] {1, 2, 3},
                 new int[] {4, 5, 6},
@@ -244,25 +276,74 @@ namespace learn_csharp
             Console.WriteLine(grids[1][0] + " " + grids[1][1] + " " + grids[1][2]);
             Console.WriteLine(grids[2][0] + " " + grids[2][1] + " " + grids[2][2]);
             
-            // functions
+            // function
             call();
 
-            sayHello("Mike", 24);
-            sayHello("Albert", 23);
-            sayHello("Banning", 22);
+            sayHello("Budi", 17);
+            sayHello("Andi", 19);
+            sayHello("Reni", 21);
 
-            // returns
+            // return
             volumeCube(4.0);
 
             Console.WriteLine(volumeCube(6.0));
             double answer = volumeParallelepiped(2.0, 3.0, 5.0);
-            Console.WriteLine($"Volume of Parallelepiped is {answer}");
+            Console.WriteLine($"Volume dari persegi panjang ini adalah {answer}");
 
-            // logical operators
+            // operator relasi
             /*
-                && requires both to be true (and)
-                || requires either to be true (or)
-                ! negates the result (not)
+                == sama dengan
+                != tidak sama dengan
+                >  lebih dari
+                <  kurang dari
+                >= lebih dari sama dengan
+                <= kurang dari sama dengan
+            */
+
+            // if statements
+            int index = 10;
+
+            if (index == 10)
+            {
+                Console.WriteLine("Benar");
+            }
+
+            // else clause
+            int years = 1991;
+
+            if (years == 1991)
+            {
+                Console.WriteLine("Benar");
+            }
+            else
+            {
+                Console.WriteLine("Salah");
+            }
+
+            // else if clause
+            int apple = 7;
+
+            if (apple > 8)
+            {
+                Console.WriteLine("Jumlah apel lebih dari 8");
+            } 
+            else if (apple < 6)
+            {
+                Console.WriteLine("Jumlah apel kurang dari 6");
+            }
+            else
+            {
+                Console.WriteLine("Jumlah apel sama dengan 7");
+            }
+
+            // switch statements
+
+
+            // operator logika
+            /*
+                && dan
+                || atau
+                ! tidak
             */
 
             // conditionals
@@ -273,52 +354,78 @@ namespace learn_csharp
 
             if (coffee > 0 && donut > 1)
             {
-                Console.WriteLine("My coffee greater than 0 and my donut greater than 1");
+                Console.WriteLine("Kopi saya lebih banyak dari 0 dan donat saya lebih banyak dari 1");
             }
 
             if (coffee > 0 || donut > 1)
             {
-                Console.WriteLine("My coffee greater than 0 or my donut greater than 1");
+                Console.WriteLine("Kopi saya lebih banyak dari 0 atau donat saya lebih banyak dari 1");
             }
 
             if (!tired)
             {
-                Console.WriteLine("I am not tired");
+                Console.WriteLine("Saya tidak lelah");
             }
 
             // while loop
-            Console.Write("Create your PIN numbers: ");
-            int new_pin = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter your PIN numbers: ");
-            int pin = Convert.ToInt32(Console.ReadLine());
+            int a = 1;
 
-            while (pin != new_pin)
+            while (a <= 5)
             {
-                Console.WriteLine("Try again!");
-                Console.Write("Enter your PIN numbers: ");
-                pin = Convert.ToInt32(Console.ReadLine());
+                Console.Write(a + " ");
+                a++;
             }
-            Console.WriteLine("Yes you right");
+            Console.WriteLine();
 
             // do while loop
-            int a = 1;
+            int b = 1;
 
             do
             {
-                Console.WriteLine(a);
-                a++;
+                Console.Write(b + " ");
+                b++;
             }
-            while (a <= 5);
+            while (b <= 5);
+            Console.WriteLine();
 
             // for loop
-            int b;
+            int c;
 
-            for (b = 0; b < 10; b++)
+            for (c = 1; c <= 5; c++)
             {
-                Console.WriteLine(b);
+                Console.Write(c + " ");
             }
+            Console.WriteLine();
 
-            // classes objects
+            // break
+            int d, e = 5;
+
+            for (d = 1; d <= 10; d++)
+            {
+                if (d == e)
+                {
+                    break;
+                }
+                Console.Write(e + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Ketika bernilai " + e + " maka berhenti");
+
+            // continue
+            int f, g = 7;
+
+            for (f = 1; f <= 10; f++)
+            {
+                if (f == g)
+                {
+                    continue;
+                }
+                Console.Write(f + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Ketika bernilai " + g + " maka nilai " + g + " akan hilang");
+
+            // classes object
             Book book1 = new Book();
             book1.title = "Harry Potter";
             book1.author = "J. K. Rowling";
@@ -333,7 +440,7 @@ namespace learn_csharp
             Console.WriteLine(book2.title);
             Console.WriteLine(book2.author);
 
-            // constructor
+            // konstruktor
             Movie movie1 = new Movie("Parasite", "Bong Joon Ho", 2019);
             Movie movie2 = new Movie("Contagion", "Steven Soderbergh", 2011);
 
@@ -351,9 +458,9 @@ namespace learn_csharp
             Console.WriteLine(movie3.director);
             Console.WriteLine(movie3.years);
 
-            // object functions
-            Student student1 = new Student("Jimmy", 21, "Business", 3.4);
-            Student student2 = new Student("Packie", 20, "Art", 3.8);
+            // object function
+            Student student1 = new Student("Nindy", 20, "Bisnis", 3.4);
+            Student student2 = new Student("Beni", 23, "Seni", 3.8);
 
             Console.WriteLine(student1.hasHonors());
             Console.WriteLine(student2.hasHonors());
@@ -367,21 +474,26 @@ namespace learn_csharp
 
              // inheritance
             Chef chef = new Chef();
-            chef.makeChicken();
+            chef.makeNasiGoreng();
+            chef.makeAyamBakar();
+            chef.makeMenuSpesial();
 
-            ItalianChef italianChef = new ItalianChef();
-            italianChef.makePasta();
-            italianChef.makeSpecialDish();
+            JavaneseChef javaneseChef = new JavaneseChef();
+            javaneseChef.makeRawon();
+            javaneseChef.makePecel();
+            javaneseChef.makeNasiGoreng();
+            javaneseChef.makeAyamBakar();
+            javaneseChef.makeMenuSpesial();
         }
 
         static void call()
         {
-            Console.WriteLine("You call this function");
+            Console.WriteLine("Kamu memanggil fungsi ini");
         }
 
         static void sayHello(string name, int age)
         {
-            Console.WriteLine($"Hello {name}, you was {age}");
+            Console.WriteLine($"Halo {name}, kamu berusia {age} tahun");
         }
 
         static double volumeCube(double side)
