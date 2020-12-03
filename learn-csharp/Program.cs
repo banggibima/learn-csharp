@@ -39,7 +39,11 @@ namespace learn_csharp
         public int age;
         public string major;
         public double gpa;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 443287d863a9d02b8ed06e16f609b56f1ba0303b
         public Student(string aName, int aAge, string aMajor, double aGpa)
         {
             this.name = aName;
@@ -57,7 +61,11 @@ namespace learn_csharp
             return false;
         }
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 443287d863a9d02b8ed06e16f609b56f1ba0303b
     class Music
     {
         public string title;
@@ -453,8 +461,8 @@ namespace learn_csharp
             Console.WriteLine(movie3.years);
 
             // object function
-            Student student1 = new Student("Nindy", 20, "Bisnis", 3.4);
-            Student student2 = new Student("Beni", 23, "Seni", 3.8);
+            Student student1 = new Student("Nindy", 20, "Bisnis", 3.8);
+            Student student2 = new Student("Beni", 23, "Seni", 3.4);
 
             Console.WriteLine(student1.hasHonors());
             Console.WriteLine(student2.hasHonors());
