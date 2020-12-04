@@ -224,9 +224,9 @@ namespace learn_csharp
             Console.WriteLine(Math.Sqrt(144)); // akar pangkat
 
             // input
-            Console.Write("Masukan namamu: ");
+            Console.Write("Masukan nama kamu: ");
             string name = Console.ReadLine();
-            Console.Write("Masukan usiamu: ");
+            Console.Write("Masukan usia kamu: ");
             int age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Halo {name}, kamu berusia {age} tahun");
