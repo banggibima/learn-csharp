@@ -39,11 +39,7 @@ namespace learn_csharp
         public int age;
         public string major;
         public double gpa;
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 443287d863a9d02b8ed06e16f609b56f1ba0303b
         public Student(string aName, int aAge, string aMajor, double aGpa)
         {
             this.name = aName;
@@ -61,11 +57,7 @@ namespace learn_csharp
             return false;
         }
     }
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 443287d863a9d02b8ed06e16f609b56f1ba0303b
     class Music
     {
         public string title;
@@ -320,24 +312,27 @@ namespace learn_csharp
             }
 
             // switch statements
-            int grade = 2;
+            int predicate = 2;
 
-            switch (grade)
+            switch (predicate)
             {
                 case 1:
-                    Console.WriteLine("Freshman");
+                    Console.WriteLine("Sangat Baik");
                     break;
                 case 2:
-                    Console.WriteLine("Sophomore");
+                    Console.WriteLine("Baik");
                     break;
                 case 3:
-                    Console.WriteLine("Junior");
+                    Console.WriteLine("Cukup");
                     break;
                 case 4:
-                    Console.WriteLine("Senior");
+                    Console.WriteLine("Kurang");
+                    break;
+                case 5:
+                    Console.WriteLine("Sangat Kurang");
                     break;
                 default:
-                    Console.WriteLine("Invalid");
+                    Console.WriteLine("Tidak valid");
                     break;
             }
 
